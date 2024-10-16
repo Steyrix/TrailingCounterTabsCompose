@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
         val tabsData = TrailingBadgeTabsViewData(
             tabs = listOf(
                 TrailingBadgeTabData(
-                    count = 10,
+                    count = 0,
                     text = "First",
                     isSelected = true
                 ),

@@ -123,11 +123,13 @@ private fun buildInlineContent(
                 placeholderVerticalAlign = PlaceholderVerticalAlign.TextCenter
             )
         ) {
-            TrailingBadgeBox(
-                text = count.toString(),
-                tabTextWidth = textDimensions.first,
-                tabTextHeight = textDimensions.second
-            )
+            if (count != 0) {
+                TrailingBadgeBox(
+                    text = count.toString(),
+                    tabTextWidth = textDimensions.first,
+                    tabTextHeight = textDimensions.second
+                )
+            }
         }
     )
 }
